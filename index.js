@@ -22,7 +22,7 @@ let mengano = hacker2.length;
 
 if (fulano > mengano) {
   console.log(`The driver has the longest name, it has ${fulano} characters.`);
-} else if (fulano > mengano) {
+} else if (fulano < mengano) {
   console.log(
     `It seems that the navigator has the longest name, it has ${mengano} characters.`
   );
