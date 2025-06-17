@@ -76,3 +76,52 @@ if(tomate < 0){
 // - `Yo, the navigator goes first, definitely.` <br>
 // - `What?! You both have the same name?`
 
+
+// Bonus 1:
+// Go to the lorem ipsum generator website and:
+
+// Generate 3 paragraphs. Store the text in a new string variable named longText.
+console.log('bonus1');
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae elementum enim. Maecenas at arcu sagittis, hendrerit quam eget, finibus nulla. Duis scelerisque risus cursus libero ullamcorper, sed tristique magna aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis vel velit a tellus ullamcorper hendrerit vel non orci. Suspendisse semper malesuada arcu id egestas. Pellentesque congue bibendum elit, et lacinia mi imperdiet in. Integer nisi massa, laoreet at neque et, posuere vehicula libero. Aliquam fringilla lorem ligula, nec sollicitudin magna congue sit amet.
+
+Donec vestibulum odio ex, in ullamcorper tellus accumsan eget. Donec orci justo, accumsan in vehicula a, ultricies ac nibh. Integer vehicula lorem eu odio ullamcorper venenatis. Vivamus sit amet tempus est, non semper libero. Cras semper tortor quis felis varius tincidunt. Donec suscipit sem vel justo venenatis semper vitae vitae lacus. Nam dignissim convallis sapien, ac euismod velit tincidunt eu. Morbi dapibus lacus nec magna imperdiet finibus. Maecenas dictum, dui pellentesque tristique iaculis, lorem nisi luctus purus, id vehicula ipsum urna vitae eros. Integer rutrum diam a condimentum rutrum. Donec vehicula, erat id eleifend porta, ex lectus eleifend nunc, at mollis eros urna vel est. Vestibulum viverra eros sed sapien luctus, et malesuada turpis accumsan. Fusce risus odio, imperdiet sed magna at, bibendum venenatis augue. Nulla molestie tortor ac porta cursus. Nunc sit amet laoreet mi, maximus fringilla ipsum. Vivamus non arcu at orci sodales consectetur.
+
+Cras cursus, nibh quis dictum pulvinar, metus sapien interdum lectus, vitae porta justo ante eu dui. Vestibulum in nunc vitae dolor varius ultricies. Nunc mi justo, hendrerit id dapibus sed, imperdiet venenatis nunc. Morbi tempor metus tortor, sollicitudin scelerisque turpis aliquam a. Etiam bibendum luctus nisl, egestas facilisis ex elementum sit amet. Proin in massa finibus, egestas erat in, malesuada tortor. Duis hendrerit mi tortor, ac eleifend lectus facilisis non. Vestibulum ullamcorper, metus quis fringilla dapibus, nisl lorem rhoncus felis, sed ornare diam velit non tortor. Integer nec sollicitudin turpis. Curabitur auctor lacus nunc, eget blandit sapien commodo rhoncus. Nam dapibus mi at diam pretium varius. Nullam quis purus nec est ullamcorper finibus. Aliquam vitae ante a turpis lobortis gravida. Praesent non pretium orci, non feugiat lorem.
+
+`;
+
+
+// Make your program count the number of words in the string.
+let count=0;
+palabras = lorem.split(' ');
+for (let i = 0; i < palabras.length; i++) {
+    count++
+    }
+console.log(count);
+
+// Make your program count the number of times the Latin word et appears.
+let count2= 0;
+
+for (let i = 0; i <palabras.length; i++) {
+    if(palabras[i]==="et") {
+count2++;
+    }
+}
+
+
+console.log(count2);
+
+
+
+// Bonus 2:
+// Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+// "A man, a plan, a canal, Panama!"
+// "Amor, Roma"
+// "race car"
+// "stack cats"
+// "step on no pets"
+// "taco cat"
+// "put it up"
+// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+// IMPORTANT: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as join(), reverse(), etc.). However, we want you to apply your current knowledge and try to come up with a solution by just using the for loop and if-else statements with some break and continue.
