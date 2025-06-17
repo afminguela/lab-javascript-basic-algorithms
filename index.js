@@ -32,3 +32,47 @@ if(fulano > mengano){
 
 
 // Iteration 3: Loops
+// 3.1 Print the characters of the driver's name, separated by space, and [in capital letters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), i.e., `"J O H N"`.
+
+let patata = hacker1.toUpperCase().split('').join(" ");
+
+let str="";
+for ( i = 0; i < hacker1.length; i++) {
+  str += hacker1[i].toUpperCase()+ " "
+}
+
+
+console.log(patata);
+console.log(str);
+
+
+
+//   3.2 Print all the characters of the navigator's name in reverse order, i.e., `"nhoJ"`.
+
+
+
+let str2="";
+
+for (i = hacker2.length -1 ; i >= 0 ; i--){
+    str2 += hacker2[i].toUpperCase();
+}
+
+console.log(str2)
+
+
+//   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
+
+let tomate= hacker1.localeCompare(hacker2)
+
+if(tomate < 0){
+    console.log(`The driver's name goes first.`)
+} else if (tomate > 0){
+    console.log(`Yo, the navigator goes first, definitely.`)
+} else {
+    console.log(`What?! You both have the same name?`)
+}
+
+// - `The driver's name goes first.` <br>
+// - `Yo, the navigator goes first, definitely.` <br>
+// - `What?! You both have the same name?`
+
